@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인터넷우체국</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+
+      $('nav>ul>li').hover(
+        function () {
+          $(this).find('ul').stop().slideDown(300);
+        },
+        function () {
+          $(this).find('ul').stop().slideUp(300);
+        }
+      )
+    });
+  </script>
+  <script>
+    $("#slideBanner > div:gt()").hide();
+
+    setInterval(function () {
+      $('#slideBanner > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .appendTo('#slideBanner');
+    }, 4000);
+  </script>
+  <script>
+    $("#evBN > div:gt()").hide();
+
+    setInterval(function () {
+      $('#evBN > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .appendTo('#evBN');
+    }, 4000);
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="./icon/favicon.ico" />
+</head>
+<body>
+  <header id="header">
+    <div id="topLine">
+      <div id="topleftright">
+        <div id="lefttopMenu">
+          <img src="./icon/bottomarrow.png" alt="botarrow" class="topmenuIcon">
+          <span class="lefttopMenu-span">앱 다운로드:
+            <a href="#">우편 | 쇼핑</a>
+          </span>
+          <img src="./icon/rightarrow.png" alt="rigarrow" class="topmenuIcon">
+          <span class="lefttopMenu-span">바로가기 설치:
+            <a href="#">우편 | 쇼핑</a>
+          </span>
+        </div>
+        <div id="righttopMenu">
+          <ul class="rightul">
+            <li><a href="./login.html">로그인&nbsp;&nbsp;|</a></li>
+            <li><a href="#">&nbsp;&nbsp;회원가입&nbsp;&nbsp;|</a></li>
+            <li><a href="#">&nbsp;&nbsp;고객센터&nbsp;&nbsp;|</a></li>
+            <li><a href="#">&nbsp;&nbsp;사이트 안내&nbsp;&nbsp;|</a></li>
+            <li><a href="#">&nbsp;&nbsp;ENGLISH</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="logoLine">
+      <div id="logoContents">
+        <div id="logo">
+          <h1>인터넷우체국</h1>
+          <a href="./index.html"><img src="./icon/postemblemtran.png" width="205" alt="logo"></a>
+        </div>
+        <div id="searchBox">
+          <form>
+            <input type="text" placeholder="검색어를 입력하세요"
+              style="display: block; width:327px; height: 38px; background-color:white;">
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="mainMenu">
+      <div id="navContents">
+        <nav class="nav">
+          <ul class="nav-wrap cf">
+            <li><a href="#" class="nmenu1">우편</a>
+              <ul>
+                <li><a href="#">전자우편</a></li>
+                <li><a href="#">생활정보홍보우편</a></li>
+                <li><a href="#">증명서비스</a></li>
+                <li><a href="#">부가서비스</a></li>
+                <li><a href="#">나의 이용정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nmenu2">우체국쇼핑</a>
+              <ul>
+                <li><a href="#">특산물</a></li>
+                <li><a href="#">꽃배달</a></li>
+                <li><a href="#">전통시장</a></li>
+                <li><a href="#">해외배송</a></li>
+                <li><a href="#">우체국B2B</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nmenu3">방문접수 &middot; 창구소포</a>
+              <ul>
+                <li><a href="#">방문접수소포</a></li>
+                <li><a href="#">창구소포접수</a></li>
+                <li><a href="#">착불배달우편물 요금</a></li>
+                <li><a href="#">결제/조회</a></li>
+                <li><a href="#">인터넷/선납소포라벨</a></li>
+                <li><a href="#">이용 안내</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nmenu4">EMS &middot; 국제우편</a>
+              <ul>
+                <li><a href="#">EMS &middot; 국제우편 예약</a></li>
+                <li><a href="#">행방조회/조사청구</a></li>
+                <li><a href="#">통관절차대행수수료</a></li>
+                <li><a href="#">납부/조회</a></li>
+                <li><a href="#">서비스 안내</a></li>
+              </ul>
+            <li><a href="#" class="nmenu5">우표 &middot; 엽서 &middot; 축하카드</a>
+              <ul class="youngjoo">
+                <li><a href="#">우표류</a></li>
+                <li><a href="#">엽서류</a></li>
+                <li><a href="#">축하카드류</a></li>
+                <li><a href="#">한국우표표털</a></li>
+                <li><a href="#">나의 이용정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nmenu6">골드바 &middot; 우체국알뜰폰</a>
+              <ul>
+                <li><a href="#">골드바</a></li>
+                <li><a href="#">우체국알뜰폰</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nmenu7">모바일우편함</a>
+              <ul>
+                <li><a href="#">서비스 안내</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nmenu8">고객센터</a>
+              <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">고객불편신고</a></li>
+                <li><a href="#">칭찬합니다</a></li>
+                <li><a href="#">국민신문고</a></li>
+                <li><a href="#">110채팅/화상(수화)상담</a></li>
+                <li><a href="#">전국 우체국 이용안내</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

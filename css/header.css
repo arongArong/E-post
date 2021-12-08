@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #010101;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#header {
+  width: 100%;
+  height: 135px;
+  background: white;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+#topLine {
+  width: 100%;
+  height: 30px;
+  background: #f2f2f2;
+  margin: 0 auto;
+  border-bottom: gray 1px solid;
+}
+
+#topleftright {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+#lefttopMenu {
+  width: 359px;
+  height: 30px;
+  float: left;
+  font-size: 12px;
+  margin-top: 6px;
+  position: relative;
+}
+
+.topmenuIcon {
+  position: absolute;
+  top: 3px;
+
+}
+
+.lefttopMenu-span {
+  font-size: 12px;
+  margin-left: 17px;
+  text-align: left;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.lefttopMenu-span a:hover {
+  cursor: pointer;
+}
+
+#righttopMenu {
+  width: 331px;
+  height: 30px;
+  float: right;
+  background: #f2f2f2;
+  margin-left: 30px;
+}
+
+#righttopMenu>ul>li {
+  float: left;
+  margin-top: 6px;
+  color: #010101;
+}
+
+#righttopMenu>ul>li>a {
+  color: #010101;
+}
+
+.rightul {
+  list-style: none;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+#logoLine {
+  width: 100%;
+  height: 125px;
+  margin: 0 auto;
+  background: white;
+  clear: both;
+}
+
+h1 {
+  font-size: 24px;
+  display: none;
+}
+
+#logoContents {
+  width: 1180px;
+  height: 105px;
+  margin: 0 auto;
+}
+
+#logo {
+  width: 205px;
+  height: 120px;
+  margin-left: 0px;
+  float: left;
+  clear: both;
+  margin-top: 0px;
+}
+
+#searchBox {
+  width: 400px;
+  height: 38px;
+  margin-left: 210px;
+  margin-top: 34px;
+  background: rgb(71, 238, 238);
+  float: left;
+}
+
+#searchBox>form {
+  width: 400px;
+  height: 38px;
+  position: relative;
+}
+
+#searchBox input {
+  width: 350px;
+  height: 38px;
+  padding-left: 10px;
+  border: red 2px solid;
+  outline: none;
+}
+
+#searchBox button {
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 42px;
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+}
+
+#searchBox button::before {
+  content: '검색';
+  font-size: 16px;
+  color: white;
+}
+
+#mainMenu {
+  width: 100%;
+  height: 45px;
+  background: white;
+  clear: both;
+  margin-bottom: 30px;
+  display: block;
+  letter-spacing: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 2px solid red;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+nav>a {
+  text-decoration: none;
+}
+
+.nav-wrap {
+  text-align: center;
+  width: 1180px;
+  margin: 0 auto;
+  border-left: 1px gray solid;
+  border-right: 1px gray solid;
+}
+
+.nav-wrap li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: -1px;
+  width: 120px;
+  font-size: 14px;
+  padding: 0;
+}
+
+.nav-wrap ul li {
+  float: left;
+  clear: both;
+  z-index: 99999;
+}
+
+.nav-wrap ul li a {
+  display: block;
+  line-height: 38px;
+  font-weight: 400px;
+  background-color: #fff;
+  color: #666;
+  z-index: 99999;
+}
+
+nav ul li {
+  position: relative;
+}
+
+.nmenu1::after,
+.nmenu2::after,
+.nmenu3::after,
+.nmenu5::after,
+.nmenu6::after,
+.nmenu7::after {
+  content: '|';
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  top: 5px;
+  right: -10px;
+}
+
+.nmenu4::after {
+  content: '|';
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  top: 5px;
+  right: -7px;
+}
+
+.nmenu5 {
+  margin-left: 10px;
+}
+
+.youngjoo {
+  left: -3px;
+}
+
+nav ul ul {
+  position: absolute;
+  display: none;
+  background: white;
+  font-size: 14px;
+  top: 50px;
+  left: -13px;
+  z-index: 99999;
+}
+
+.nav-wrap li ul a {
+  width: 150px;
+}
+
+.nav-wrap li {
+  padding: 0px 5px 5px 8px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.nav-wrap li a {
+  display: block;
+  padding: 0;
+  line-height: 38px;
+  font-weight: 400px;
+  background-color: #fff;
+  color: #000;
+  margin-top: 4px;
+}
+
+.nav-wrap>li>ul>li>a {
+  font-size: 13px;
+}
+
+.nav-wrap>li>ul>li>a:hover,
+.nav-wrap>li>ul>li>a:focus {
+  /*   text-decoration: underline; */
+  background-color: lightgray;
+  color: black;
+}
+
+.nav-wrap ul li ul {
+  text-align: center;
+}
+
+#navContents {
+  width: 1180px;
+  height: 100px;
+  margin: 0 auto;
+}
